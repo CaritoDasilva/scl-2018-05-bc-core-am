@@ -7,6 +7,42 @@
 </head>
 <body>
 
+  <h1>BIENVENID@ AL NO EVENTO</h1>
+  <!-- Aquí invitado va a escribir su nombre -->
+  <h2>¿Cuál es tu nombre?</h2>
+  <input type="text" id="inputName">
+  <button id="aceptaName">ACEPTAR</button>
+  <div id="welcome"></div>
+  
+  <!-- Si no está en la lista de invitados aquí debería aparecer mensaje de despedida -->
+  <div id="notWelcome"></div>
+  
+    
+  <!-- Ingresar clave que es igual al número de posiciones que debe correr el cifrado -->
+  <h3>Clave:</h3>
+  <input type="text" id="cifrado">
+  <button id="cifradoAceptar">ACEPTAR</button>
+  
+  <!-- Aquí se ingresa el mensaje que quiero codificar -->
+  <div class="ubicacion-1">
+  <h2>Ingresar mensaje:</h2>
+  <textarea id="mensajeSecreto" cols="30" rows="10"></textarea>
+  <button id="enviarMensaje">ACEPTAR</button>
+  
+  <!-- Se regresa mensaje cifrado -->
+  
+  <div id="mensajeCodificado"></div>
+  </div>
+  <!-- Se Ingresa mensaje cifrado -->
+  <div class="ubicacion-2">
+  <h2>Ingresa tu mensaje en clave:</h2>
+  <textarea class="inline" id="mensajeCifrado" cols="30" rows="10"></textarea>
+  <button id="enviarMensaje2">ACEPTAR</button>
+  
+  <!-- Regresa mensaje decodificado -->
+  <div id="mensajeDecodificado"></div>
+  </div>
+
   <div id="root"></div>
 
   <script src="cipher.js"></script>
