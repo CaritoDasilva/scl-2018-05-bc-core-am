@@ -21,9 +21,17 @@ window.onload = function () {
     nameBtn.addEventListener("click", function() {
         let welcomeTXT = document.getElementById("welcome");
         let nameUser = document.getElementById("inputName").value;
+        let nameUser2 = document.getElementById("inputName");
+        /*aquí le digo al botón que después que se haga click desaparezca para que solo me quede el nombre*/
+        nameBtn.style.display = "none";
+        nameUser2.style.display = "none";
         welcomeTXT.innerHTML = "Hol@ " + nameUser;
-        
+   
     
     });
 
+    /*Voy a llamar al botón de la clave (número de posicionamiento)*/
+    claveBtn.addEventListener("click",function(){
+        
+    })
 }

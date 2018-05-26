@@ -1,6 +1,19 @@
 body {
 background-image: url(background1.jpeg);
-	}
+font-family: 'Indie Flower', cursive;
+}
+.finoles {
+font-family: 'Indie Flower', cursive;
+border-radius: 15px;
+background-color : #eaf9ff;
+border : 1px solid #000000;
+font-size : 14px;
+padding-left : 7px;
+padding-right : 7px;
+}
+.welcome {
+font-size : 100px;	
+}
 
 .ubicacion-1 {
 width: 400px;
