@@ -21,7 +21,6 @@ window.onload = function () {
     /*Voy a llamar al botón de nombre de usuario*/
             
     nameBtn.addEventListener("click", function() {
-    
         let welcomeTXT = document.getElementById("welcome");
         let nameUser = document.getElementById("inputName").value;
         let nameUser2 = document.getElementById("inputName");
@@ -40,15 +39,17 @@ window.onload = function () {
         let secretMsn2 = document.getElementById("mensajeSecreto");
         let txtCifrado = document.getElementById("cifrado").value;
         const wordMsn1 = document.getElementById("msn1");
+        let txtCifrado2 = document.getElementById("cifrado");
+        const wordClave = document.getElementById("clave");
+        txtCifrado2.style.display = "none";
         secretMsn2.style.display = "none";
         cifrarBtn.style.display = "none";
         wordMsn1.style.display = "none";
+        wordClave.style.display = "none";
         let finalMessage = window.cipher.encode(secretMsn, txtCifrado);
         (document.getElementById("mensajeCodificado").innerHTML) = "<p>Hola</p>" + finalMessage;
-        
-        
-
     });
+
     /*Aquí voy a llamar al botón que descifra el mensaje*/
     decoBtn.addEventListener("click", function() {
         let cifradoMsn = document.getElementById("mensajeCifrado").value;
@@ -58,5 +59,6 @@ window.onload = function () {
         decoBtn.style.display = "none";
         wordMsn2.style.display = "none";
     });
+    
 
 }
