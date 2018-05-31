@@ -47,17 +47,20 @@ window.onload = function () {
         wordMsn1.style.display = "none";
         wordClave.style.display = "none";
         let finalMessage = window.cipher.encode(secretMsn, txtCifrado);
-        (document.getElementById("mensajeCodificado").innerHTML) = "<p>Hola</p>" + finalMessage;
+        document.getElementById("mensajeCodificado").innerHTML = "<p>Hola</p>" + finalMessage;
     });
 
     /*Aquí voy a llamar al botón que descifra el mensaje*/
     decoBtn.addEventListener("click", function() {
         let cifradoMsn = document.getElementById("mensajeCifrado").value;
         let cifradoMsn2 = document.getElementById("mensajeCifrado");
+        let txtCifrado = document.getElementById("cifrado").value;
         const wordMsn2 = document.getElementById("msn2");
         cifradoMsn2.style.display = "none";
         decoBtn.style.display = "none";
         wordMsn2.style.display = "none";
+        let finalMessage2 = window.cipher.decode(cifradoMsn, txtCifrado);
+        document.getElementById("mensajeDecodificado").innerHTML = "<p>Hola</p>" + finalMessage2;
     });
     
 

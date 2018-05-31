@@ -1,17 +1,22 @@
 window.cipher = {
   encode: (secretMsn, txtCifrado) => {
     let message = " ";
-    for(let i = 0; i < secretMsn.length; i ++) {
-      let x = secretMsn.charCodeAt(i);
-      let ascii = ((x - 65 + txtCifrado) % 26 + 65);
+    for(let i = 0; i < secretMsn.length; i++) {
+      let ascii = secretMsn.charCodeAt(i) - 65 + txtCifrado % 26 + 65;
       message += String.fromCharCode(ascii);
-      //if((x.chartCodeAt(0)>=65) && (x.chatCodeAt(0)<=90)) {
+      
     }
     return message;
-    
+    console.log(message);
   
   },
-  decode: () => {
-    /* Acá va tu código */
+  decode: (cifradoMsn, txtCifrado) => {
+    let messageReturn = " ";
+    for(let i = 0; i < cifradoMsn.length; i++) {
+      let alphabet = cifradoMsn.charCodeAt(i) + 65 - txtCifrado % 26 - 65;
+      messageReturn += String.fromCharCode(alphabet);
+    }
+    return messageReturn;
+    console.log(messageReturn);
   }
 }
