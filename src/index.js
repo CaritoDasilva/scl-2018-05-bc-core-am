@@ -14,13 +14,12 @@ window.onload = function () {
 
     /*Lista de Invitados (Array)*/
 
-    let guests = ["carolina", "valeska", "barbara", "evelyn", "carolinad", "marcia", "alexandra"];
+    
     let nameUser = document.getElementById("inputName").value;
 
 
     /*Voy a llamar al botón de nombre de usuario*/
-    if (nameUser = guests) {
-        
+            
     nameBtn.addEventListener("click", function() {
     
         let welcomeTXT = document.getElementById("welcome");
@@ -34,27 +33,7 @@ window.onload = function () {
         welcomeTXT.innerHTML = "Hol@ " + nameUser;
     });
             
-    
-    } else {
-        nameBtn.style.display = "none";
-        nameUser2.style.display = "none";
-        questionName.style.display = "none";
-        txtCifrado2.style.display = "none";
-        claveBtn.style.display = "none";
-        wordClave.style.display = "none";
-        document.getElementById("notWelcome").innerHTML = "<h1>DEBES ABANDONAR INMEDIATAMENTE ESTA PÁGINA</h1>"
         
-    }
-    
-    /*Voy a llamar al botón de la clave (número de posicionamiento)*/
-    claveBtn.addEventListener("click",function(){
-        let txtCifrado = document.getElementById("cifrado").value;
-        let txtCifrado2 = document.getElementById("cifrado");
-        const wordClave = document.getElementById("clave");
-        txtCifrado2.style.display = "none";
-        claveBtn.style.display = "none";
-        wordClave.style.display = "none";
-    });
  /*Aquí voy a llamar el boton que cifra el mensaje para ponerlo funcional*/
     cifrarBtn.addEventListener("click",function() {
         let secretMsn = document.getElementById("mensajeSecreto").value.toUpperCase();
@@ -64,9 +43,10 @@ window.onload = function () {
         secretMsn2.style.display = "none";
         cifrarBtn.style.display = "none";
         wordMsn1.style.display = "none";
-    
-        window.cipher.encode();
-        return secretMsn.innerHTML = window.cipher(message);
+        let finalMessage = window.cipher.encode(secretMsn, txtCifrado);
+        (document.getElementById("mensajeCodificado").innerHTML) = "<p>Hola</p>" + finalMessage;
+        
+        
 
     });
     /*Aquí voy a llamar al botón que descifra el mensaje*/
