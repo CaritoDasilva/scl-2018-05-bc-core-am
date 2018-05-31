@@ -47,7 +47,7 @@ window.onload = function () {
         wordMsn1.style.display = "none";
         wordClave.style.display = "none";
         let finalMessage = window.cipher.encode(secretMsn, txtCifrado);
-        document.getElementById("mensajeCodificado").innerHTML = "<p>Hola</p>" + finalMessage;
+        document.getElementById("mensajeCodificado").innerHTML = "<h2>Tu mensaje cifrado</h2>" + finalMessage;
     });
 
     /*Aquí voy a llamar al botón que descifra el mensaje*/
@@ -60,7 +60,7 @@ window.onload = function () {
         decoBtn.style.display = "none";
         wordMsn2.style.display = "none";
         let finalMessage2 = window.cipher.decode(cifradoMsn, txtCifrado);
-        document.getElementById("mensajeDecodificado").innerHTML = "<p>Hola</p>" + finalMessage2;
+        document.getElementById("mensajeDecodificado").innerHTML = "<h2>Tu mensaje descifrado</h2>" + finalMessage2;
     });
     
 
