@@ -47,7 +47,7 @@ window.onload = function () {
         wordMsn1.style.display = "none";
         wordClave.style.display = "none";
         let finalMessage = window.cipher.encode(secretMsn, txtCifrado);
-        document.getElementById("mensajeCodificado").innerHTML = "<h2>Tu mensaje cifrado</h2>" + finalMessage;
+        document.getElementById("mensajeCodificado").innerHTML = "<h2>Tu mensaje cifrado:</h2>" + finalMessage;
     });
 
     /*Aquí voy a llamar al botón que descifra el mensaje*/
@@ -55,12 +55,16 @@ window.onload = function () {
         let cifradoMsn = document.getElementById("mensajeCifrado").value;
         let cifradoMsn2 = document.getElementById("mensajeCifrado");
         let txtCifrado = document.getElementById("cifrado").value;
+        let txtCifrado2 = document.getElementById("cifrado");
         const wordMsn2 = document.getElementById("msn2");
+        const wordClave = document.getElementById("clave");
         cifradoMsn2.style.display = "none";
         decoBtn.style.display = "none";
         wordMsn2.style.display = "none";
+        txtCifrado2.style.display = "none";
+        wordClave.style.display = "none"; 
         let finalMessage2 = window.cipher.decode(cifradoMsn, txtCifrado);
-        document.getElementById("mensajeDecodificado").innerHTML = "<h2>Tu mensaje descifrado</h2>" + finalMessage2;
+        document.getElementById("mensajeDecodificado").innerHTML = "<h2>Tu mensaje descifrado:</h2>" + finalMessage2;
     });
     
 
