@@ -1,0 +1,67 @@
+body {
+background-image: url(background1.jpeg);
+font-family: 'Indie Flower', cursive;
+}
+.finoles {
+  font-family: 'Indie Flower', cursive;
+  border-radius: 15px;
+  background-color : #eaf9ff;
+  border : 1px solid #000000;
+  font-size : 14px;
+  padding-left : 7px;
+  padding-right : 7px;
+}
+
+.titulo {
+  display:block;
+  margin:auto;
+  width: 50px;
+  height: 50px;
+  left: 200px;
+}
+
+.welcome {
+  font-size: 70px;
+}
+
+.ok {
+  font-size: 100px;
+}
+
+.ubicacion-1 {
+  width: 400px;
+  height: 300px;
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+  left: 200px;
+  top: 70px;
+  text-align: center;
+  background: #889ccf8c;
+  margin: 0 0 25px;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 35px 0px 35px 0px;
+  border: 2px solid #5878ca;
+}
+
+.ubicacion-2 {
+  width: 400px;
+  height: 300px;
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+  left: 800px;
+  bottom: 300px;
+  text-align: center;
+  background: #889ccf8c;
+  margin: 0 0 25px;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 35px 0px 35px 0px;
+  border: 2px solid #5878ca;
+}
