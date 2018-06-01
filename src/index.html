@@ -11,7 +11,7 @@
 
 <body>
   <div class="titulo">
-    <h1 class="titulo">BIENVENID@ AL NO EVENTO</h1>
+    <h1 class="titulo">BIENVENID@</h1>
   </div>
   <!-- Aquí invitado va a escribir su nombre -->
   <div id="qname" class="qname">
@@ -22,21 +22,15 @@
     <strong>ACEPTAR</strong>
   </button>
   <div id="welcome" class="welcome"></div>
-
   <!-- Si no está en la lista de invitados aquí debería aparecer mensaje de despedida -->
   <div id="notWelcome"></div>
-
-
   <!-- Ingresar clave que es igual al número de posiciones que debe correr el cifrado -->
   <div id="clave">
     <h3>Clave:</h3>
   </div>
   <input type="text" id="cifrado">
-  <!-- <button id="cifradoAceptar" class="finoles">
-    <strong>ACEPTAR</strong>
-  </button>*/
-  <div id="ok"></div>-->
-
+  <button id="cifradoAceptar" class="finoles"><strong>ACEPTAR</strong></button>
+  <div id="ok"></div>
   <!-- Aquí se ingresa el mensaje que quiero codificar -->
   <div class="ubicacion-1">
     <h2 id="msn1">Ingresar mensaje a codificar:</h2>
@@ -44,12 +38,8 @@
     <button id="enviarMensaje" class="finoles">
       <strong>ACEPTAR</strong>
     </button>
-
     <!-- Se regresa mensaje cifrado -->
-
-    <div id="mensajeCodificado">
-      
-    </div>
+    <div id="mensajeCodificado"></div>
   </div>
   <!-- Se Ingresa mensaje cifrado -->
   <div class="ubicacion-2">
@@ -58,13 +48,10 @@
     <button id="enviarMensaje2" class="finoles">
       <strong>ACEPTAR</strong>
     </button>
-
     <!-- Regresa mensaje decodificado -->
     <div id="mensajeDecodificado"></div>
   </div>
-
   <div id="root"></div>
-
   <script src="cipher.js"></script>
   <script src="index.js"></script>
 </body>
