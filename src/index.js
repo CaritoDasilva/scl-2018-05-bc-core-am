@@ -15,7 +15,7 @@ window.onload = function () {
 
 	/*Voy a llamar al botón de nombre de usuario*/
 
-	nameBtn.addEventListener("click", function () {
+	nameBtn.addEventListener("click", () => {
 		let welcomeTXT = document.getElementById("welcome");
 		let nameUser = document.getElementById("inputName").value;
 		let nameUser2 = document.getElementById("inputName");
@@ -25,11 +25,11 @@ window.onload = function () {
 		nameBtn.style.display = "none";
 		nameUser2.style.display = "none";
 		questionName.style.display = "none";
-		welcomeTXT.innerHTML = "Hol@ " + nameUser;
+		welcomeTXT.innerHTML = "Bienvenid@ " + nameUser;
 	});
 
     /*Voy a llamar al botón de la clave (número de posicionamiento)*/
-    claveBtn.addEventListener("click", function () {
+    claveBtn.addEventListener("click", () => {
       let txtCifrado = document.getElementById("cifrado").value;
       let txtCifrado2 = document.getElementById("cifrado");
       const wordClave = document.getElementById("clave");
@@ -39,7 +39,7 @@ window.onload = function () {
     });
 
 	/*Aquí voy a llamar el boton que cifra el mensaje para ponerlo funcional*/
-	cifrarBtn.addEventListener("click", function () {
+	cifrarBtn.addEventListener("click", () => {
 		let secretMsn = document.getElementById("mensajeSecreto").value.toUpperCase();
 		let secretMsn2 = document.getElementById("mensajeSecreto");
 		let txtCifrado = document.getElementById("cifrado").value;
@@ -53,7 +53,7 @@ window.onload = function () {
 	});
 
 	/*Aquí voy a llamar al botón que descifra el mensaje*/
-	decoBtn.addEventListener("click", function () {
+	decoBtn.addEventListener("click", () => {
 		let cifradoMsn = document.getElementById("mensajeCifrado").value;
 		let cifradoMsn2 = document.getElementById("mensajeCifrado");
 		let txtCifrado = document.getElementById("cifrado").value;
