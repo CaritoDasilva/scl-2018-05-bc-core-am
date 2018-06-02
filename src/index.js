@@ -6,7 +6,7 @@ window.onload = function () {
 	const cifrarBtn = document.getElementById("enviarMensaje");
 	const decoBtn = document.getElementById("enviarMensaje2");
 
-
+/*variables let de los .value*/
 	let txtCifrado = document.getElementById("cifrado").value;
 	let secretMsn = document.getElementById("mensajeSecreto").value.toUpperCase();
 	let cifradoMsn = document.getElementById("mensajeCifrado").value;
